@@ -1,0 +1,6 @@
+{% assign home_page = site.pages | where:"ref", "home" | where:"lang", page.lang  | first %}
+{% if home_page %}
+  [Go to the Home Page]({{ home_page.url | prepend: site.baseurl }})
+{% else %}
+  [Go to the Home Page]({{ site.baseurl }}/)
+{% endif %}

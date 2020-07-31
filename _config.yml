@@ -18,21 +18,50 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: 一起唱DoReMi
+email: yuyin0036@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Life is not divided into semesters.
+  You don’t get summers off and very few employers are interested in helping you find yourself.
+  Do that on your own time.
+  --- Bill Gates
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
-theme: minima
+exclude: [vendor, "Gemfile", "Gemfile.lock"]
+
+target-blank:
+    rel: nofollow
+
+show_post_image_posts_list: false
+
+theme:
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+paginate: 2
+paginate_path: "/page:num"
+
+excerpt_separator: <!--end_excerpt-->
+
+header:
+  image: /assets/patterns/trees.png
+
+author:
+  name: chenuin
+  picture: /assets/patterns/trees.png
+  short_bio: hello, this is chenuin
+
+# github on site
+github:
+  owner_url: https://github.com/chenuin
+
+# blogger on site
+blogger:
+  owner_url: https://chenuin.blogspot.com/
+
+google_analytics: UA-129338927-2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
